@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useContext } from "react"
+import { Context } from '../context/context'
 
 const Header = () => {
-
+    
+    const [username, setUsername] = useContext(Context)
     return(
-        <h1>Show List</h1>
+        <h1>Welcome {username.username}</h1>
     )
 
 }
